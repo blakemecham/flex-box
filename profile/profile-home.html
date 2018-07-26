@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="#" class="toggle" id="navComputer">
+            <i class="fas fa-desktop"></i>
+        </a>     
+        <a href="#" class="brand">Blake Mecham</a>
+        <div class="left-links">
+            <a href="" class="link">Work History</a>
+            <a href="" class="link">References</a>
+            <a href="" class="link">Projects</a>
+            <a href="" class="link">Contact</a>
+        </div>
+        <div class="right-link">
+            <a href="" class="link"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</body>
+<script>
+    const navComputer = document.querySelector('#navComputer');
+    navComputer.addEventListener('click', (e) => {
+        navComputer.parentElement.classList.toggle('active');
+    })
+</script>
+</html>

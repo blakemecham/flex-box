@@ -1,0 +1,79 @@
+html {
+    font-family: 'Merriweather', serif;
+}
+body {
+    margin: 0px;
+}
+.nav-bar {
+    background-color: rgb(49, 87, 92);
+}
+.nav-bar div {
+    display: none;
+}
+.nav-bar .toggle,
+.nav-bar .brand {
+    display: inline-block;
+}
+.nav-bar .link {
+    display: block;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    background: rgb(216, 223, 199);
+    color: rgb(97, 107, 104);
+}
+.nav-bar .link:hover,
+.nav-bar .link:active {
+    color: rgb(216, 223, 199);
+    background: rgb(97, 107, 104);
+}
+.nav-bar .brand {
+    width: 10em;
+    text-align: center;
+    padding: 1em;
+    color: white;
+}
+.nav-bar a {
+    text-decoration: none;
+}
+.nav-bar .toggle {
+    padding: 1em;
+    color: antiquewhite;
+    font-size: 1.5em;
+}
+@media (min-width: 48em) {
+    .nav-bar {
+        display: flex;
+    }
+    .nav-bar .left-links,
+    .nav-bar .right-link {
+        display: flex;
+        flex: 1;
+    }
+    .nav-bar .link {
+        width: auto;
+    }
+    .nav-bar .right-link {
+        justify-content: flex-end;
+    } 
+    .nav-bar .toggle {
+        display: none;
+    }
+}
+@media (min-width: 48em) {
+    .nav-bar div {
+        display: flex;
+    }
+}
+@media (max-width: 48em) {
+    .nav-bar.active .toggle {
+        background: rgb(216, 223, 199);
+        color: rgb(97, 107, 104);
+    }
+    .nav-bar .brand {
+        text-align: left;
+    }
+    .nav-bar.active div {
+        display: block;
+    }
+}
