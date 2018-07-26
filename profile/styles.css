@@ -22,6 +22,10 @@ body {
     background: rgb(216, 223, 199);
     color: rgb(97, 107, 104);
 }
+.nav-bar .right-link .link {
+    padding: .25em;
+    font-size: 2em;
+}
 .nav-bar .link:hover,
 .nav-bar .link:active {
     color: rgb(216, 223, 199);
